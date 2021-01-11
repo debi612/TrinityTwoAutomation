@@ -24,12 +24,12 @@ public abstract class TrinityTwoValidationDriver implements WebConnector{
 
 
 	public void validateLogin() {
-		System.out.println("ZohoValidationDriver validateLogin");
+		System.out.println("ValidationDriver validateLogin");
 		
 	}
 
 	public TrinityTwoPage validateTitle(String expTitle) {
-		log("Expedted Title "+ expTitle);
+		log("Expected Title "+ expTitle);
 		log("Actual Title "+ driver.getTitle());
 		//Assert.assertEquals(driver.getTitle(), expTitle);
       //  System.out.println(" validateTitle Status is "+ isStopExecution());
@@ -65,7 +65,7 @@ public abstract class TrinityTwoValidationDriver implements WebConnector{
 	public TrinityTwoPage validateElementNotPresence(By locator) {
 		
 		if(isElementPresent(locator))
-			fail("Element not found - "+locator);
+			fail("Element found - "+locator);
 		
 		return getSession().getCurrentPage();
 	}

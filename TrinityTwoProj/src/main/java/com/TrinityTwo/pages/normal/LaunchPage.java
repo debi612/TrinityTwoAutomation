@@ -23,9 +23,10 @@ public class LaunchPage extends TrinityTwoBasePage{
     	getDriver().testOpenBrowser(browser);
     	return this;
     }
-	public TrinityTwoPage gotoHomePage() {
-		log("Navigaing to https://zoho.com");
-		getDriver().navigate("https://zoho.com");
+	public TrinityTwoPage gotoHomePage(String TCName) {
+		log("Navigaing to: http://78.137.117.157/dttmt-demo/login?returnUrl=%2F");
+		getDriver().navigate("http://78.137.117.157/dttmt-demo/login?returnUrl=%2F");
+		log("Started execution for TC: "+TCName);
 		return new HomePage();
 	}
 

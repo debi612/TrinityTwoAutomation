@@ -14,7 +14,7 @@ public interface TrinityTwoPage extends TrinityTwoNormalPage,TrinityTwoSessionPa
     
 
     // ZOHO based normal
-    TrinityTwoPage gotoHomePage();
+    TrinityTwoPage gotoHomePage(String TCName);
     void goToRegisterPage();
     TrinityTwoPage submitUsername(String userid);
     TrinityTwoPage submitPassword(String userid);
@@ -27,6 +27,14 @@ public interface TrinityTwoPage extends TrinityTwoNormalPage,TrinityTwoSessionPa
     void log(String message);
     TrinityTwoPage validateIntermediatePageOptions();
     void selectDateFromCalendar(String date); 
+    
+    
+    //----------------------------
+    TrinityTwoPage gotoSignupPage();
+    TrinityTwoPage continueSignup();
+	TrinityTwoPage signupToAccount(String Email, String Phonenumber);
+	TrinityTwoPage signupValidateEmailNegative(String signPhoneNumber);
+	TrinityTwoPage signupValidatePhoneNumberNegative(String signupEmail);
 
     
 }

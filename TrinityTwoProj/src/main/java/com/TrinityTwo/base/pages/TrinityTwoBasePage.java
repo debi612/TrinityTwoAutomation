@@ -40,7 +40,7 @@ public class TrinityTwoBasePage implements TrinityTwoPage{
 		
 	}
 
-	public TrinityTwoPage gotoHomePage() {
+	public TrinityTwoPage gotoHomePage(String TCName) {
 		return null;
 	}
 
@@ -142,6 +142,40 @@ public class TrinityTwoBasePage implements TrinityTwoPage{
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+	}
+	
+    //----------------------------
+    public TrinityTwoPage gotoSignupPage() {
+		return null;
+	}
+    
+    public TrinityTwoPage continueSignup() {
+		return null;
+	}
+    
+    public TrinityTwoPage signupToAccount(String Email, String Phonenumber) {
+		return null;
+	}
+
+
+	@Override
+	public TrinityTwoPage gotoHomePage() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+	@Override
+	public TrinityTwoPage signupValidateEmailNegative(String signPhoneNumber) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+	@Override
+	public TrinityTwoPage signupValidatePhoneNumberNegative(String signupEmail) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 }

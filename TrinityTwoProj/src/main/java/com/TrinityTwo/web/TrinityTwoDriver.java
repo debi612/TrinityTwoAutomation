@@ -90,7 +90,7 @@ public class TrinityTwoDriver extends TrinityTwoValidationDriver{
 	}
 
 	public void navigate(String url) {
-		log("URL"+url );
+		log("URL: "+url );
 		driver.get(url);
 		
 	}

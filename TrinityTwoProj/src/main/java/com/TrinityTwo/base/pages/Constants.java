@@ -115,9 +115,43 @@ public class Constants {
 	public static final String RUNMODE = "Runmode";
 	
 	
+	//-----------------------------------------------------------------
 	
 	
+	public static final String SIGNUP_LINK="//div/a[contains(text(),'Sign up')]";
+	public static final By SIGNUP_LINK_LOCATOR=By.xpath(SIGNUP_LINK);
+	
+	public static final String SIGNUPPAGE_HEADER="//div/h1[text()='Sign up to your account']";
+	public static final By SIGNUPPAGE_HEADER_LOCATOR=By.xpath(SIGNUPPAGE_HEADER);
 	
 	
-		
+	public static final String CONTINUE_BUTTON="//div/button[text()='Continue']";
+	public static final By CONTINUE_BUTTON_LOCATOR=By.xpath(CONTINUE_BUTTON);
+	
+	
+	public static final String COUNTRY_DROPDOWN="//span[@class='ng-arrow']/..";
+	public static final By COUNTRY_DROPDOWN_LOCATOR=By.xpath(COUNTRY_DROPDOWN);
+	
+	
+	////div[contains(text(),'Select country')]
+	
+	public static final String CHOOSE_COUNTRY="//div//span[contains(text(),'Spain')]";
+	public static final By CHOOSE_COUNTRY_LOCATOR=By.xpath(CHOOSE_COUNTRY);
+	
+	public static final String SIGNUPEMAIL_EDITBOX="txtSignupEmail";
+	public static final By SIGNUPEMAIL_EDITBOX_LOCATOR=By.id(SIGNUPEMAIL_EDITBOX);
+	
+	public static final String SIGNUPEMAIL_ERROR="//div[text()='Email is required.']";
+	public static final By SIGNUPEMAIL_ERROR_LOCATOR=By.xpath(SIGNUPEMAIL_ERROR);
+	
+	public static final String SIGNUPPHONENUMBER_EDITBOX="txtSignupPhoneNumber";
+	public static final By SIGNUPPHONENUMBER_EDITBOX_LOCATOR=By.id(SIGNUPPHONENUMBER_EDITBOX);
+	
+	public static final String SIGNUPPHONE_ERROR="//div[text()='Phone number is required.']";
+	public static final By SIGNUPPHONE_ERROR_LOCATOR=By.xpath(SIGNUPPHONE_ERROR);
+	
+	// titles
+	public static final String Login_PAGE_TITLE = "DT&T Test";
+
+			
 }

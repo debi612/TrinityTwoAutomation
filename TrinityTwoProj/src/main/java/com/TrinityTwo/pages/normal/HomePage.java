@@ -1,5 +1,6 @@
 package com.TrinityTwo.pages.normal;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
@@ -24,5 +25,90 @@ public class HomePage extends TrinityTwoBasePage{
 		loginLink.click();
 		return new EnterUsernamePage();
 	}
+	
+	//------------------------------------------
+	
+	@FindBy(xpath=Constants.SIGNUP_LINK)
+	WebElement SignupLink;
+	
+	@FindBy(xpath=Constants.CONTINUE_BUTTON)
+	WebElement ContinueButton;
+	
+	@FindBy(xpath=Constants.COUNTRY_DROPDOWN)
+	WebElement CountryDropDown;
+	
+	@FindBy(xpath=Constants.CHOOSE_COUNTRY)
+	WebElement ChooseCountry;
+	
+	@FindBy(id=Constants.SIGNUPEMAIL_EDITBOX)
+	WebElement SignupEmail;
+	
+	@FindBy(id=Constants.SIGNUPPHONENUMBER_EDITBOX)
+	WebElement SignupPhoneNumber;
+	
+	public TrinityTwoPage gotoSignupPage() {
+		log("Going to SignUp page");
+		SignupLink.click();
+		wait(10);
+		return this;
+	}
+	
+	public TrinityTwoPage continueSignup() {
+		log("Clicking Continue Button");
+		ContinueButton.click();
+		wait(10);
+		return this;
+	}
+	
+	public TrinityTwoPage signupToAccount(String Email, String Phonenumber) {
+		log("Signing up Account");
+		CountryDropDown.click();
+		wait(5);
+		//waitForPageToLoad();
+		ChooseCountry.click();
+		SignupEmail.sendKeys(Email);
+		SignupPhoneNumber.sendKeys(Phonenumber);
+		wait(10);
+		SignupEmail.click();
+		wait(5);
+		ContinueButton.click();
+		log("Entered: Country, Email & PhoneNumber");
+		return this;
+	}
+		
+	public TrinityTwoPage signupValidateEmailNegative(String Phonenumber) {
+			log("Validating Signup Email");
+			CountryDropDown.click();
+			wait(5);
+			//waitForPageToLoad();
+			ChooseCountry.click();
+			//SignupEmail.sendKeys(Email);
+			SignupPhoneNumber.sendKeys(Phonenumber);
+			wait(2);
+			SignupEmail.click();
+			wait(10);
+			ContinueButton.click();
+			wait(10);
+			log("Entered: Country & PhoneNumber");
+			return this;
+	}
+	
+	
+	public TrinityTwoPage signupValidatePhoneNumberNegative(String Email) {
+		log("Validating Signup Email");
+		CountryDropDown.click();
+		wait(5);
+		//waitForPageToLoad();
+		ChooseCountry.click();
+		SignupEmail.sendKeys(Email);
+		//SignupPhoneNumber.sendKeys(Phonenumber);
+		wait(2);
+		SignupPhoneNumber.click();
+		wait(10);
+		ContinueButton.click();
+		wait(10);
+		log("Entered: Country & Email");
+		return this;
+}
 	
 }
