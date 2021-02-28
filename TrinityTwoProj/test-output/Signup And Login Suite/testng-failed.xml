@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Signup And Login Suite]">
+  <test thread-count="5" name="Signup Test1(failed)">
+    <classes>
+      <class name="com.TrinityTwo.suite.loginAndSignup.TrinityTwoSignupValidation">
+        <methods>
+          <include name="init"/>
+          <include name="quit"/>
+          <include name="trinityTwo_Signup_Validation" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.TrinityTwo.suite.loginAndSignup.TrinityTwoSignupValidation -->
+    </classes>
+  </test> <!-- Signup Test1(failed) -->
+  <test thread-count="5" name="Signin Test1(failed)">
+    <classes>
+      <class name="com.TrinityTwo.suite.loginAndSignup.TrinityTwoSigninValidation">
+        <methods>
+          <include name="init"/>
+          <include name="quit"/>
+          <include name="trinityTwo_Signin_Validation" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.TrinityTwo.suite.loginAndSignup.TrinityTwoSigninValidation -->
+    </classes>
+  </test> <!-- Signin Test1(failed) -->
+  <test thread-count="5" name="Signin Test2(failed)">
+    <classes>
+      <class name="com.TrinityTwo.suite.loginAndSignup.TrinityTwoLogin">
+        <methods>
+          <include name="init"/>
+          <include name="quit"/>
+          <include name="trinityTwo_Login" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.TrinityTwo.suite.loginAndSignup.TrinityTwoLogin -->
+    </classes>
+  </test> <!-- Signin Test2(failed) -->
+</suite> <!-- Failed suite [Signup And Login Suite] -->

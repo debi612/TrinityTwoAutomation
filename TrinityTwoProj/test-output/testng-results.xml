@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="104390" started-at="2021-02-19T09:11:01 IST" finished-at="2021-02-19T09:12:45 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="104390" started-at="2021-02-19T09:11:01 IST" finished-at="2021-02-19T09:12:45 IST">
+      <class name="com.TrinityTwo.suite.loginAndSignup.TrinityTwoSelfVerificationValidation">
+        <test-method status="PASS" signature="init(org.testng.ITestResult)[pri:0, instance:com.TrinityTwo.suite.loginAndSignup.TrinityTwoSelfVerificationValidation@7dcf94f8]" name="init" is-config="true" duration-ms="264" started-at="2021-02-19T09:11:01 IST" finished-at="2021-02-19T09:11:01 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=TrinityTwoSelfVerificationValidation.trinityTwo_SelfVerification_Validation(java.util.Hashtable)[pri:0, instance:com.TrinityTwo.suite.loginAndSignup.TrinityTwoSelfVerificationValidation@7dcf94f8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="trinityTwo_SelfVerification_Validation(java.util.Hashtable)[pri:0, instance:com.TrinityTwo.suite.loginAndSignup.TrinityTwoSelfVerificationValidation@7dcf94f8]" name="trinityTwo_SelfVerification_Validation" duration-ms="100708" started-at="2021-02-19T09:11:01 IST" data-provider="getDataSignup" finished-at="2021-02-19T09:12:42 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{PhotoIDFilePath=E:\\Selenium Project\\workspace\\TrinityTwoAutomation\\TrinityTwoProj\\Files\\UploadPhotoID.exe, PostCode=L1 8JQ, AddressProofFilePath=E:\\Selenium Project\\workspace\\TrinityTwoAutomation\\TrinityTwoProj\\Files\\FileUpload.exe, Password=Testtest@123, Runmode=Y, ExpiryDate=05/15/2026, UserName=trinity122020@gmail.com, Browser=Chrome}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- trinityTwo_SelfVerification_Validation -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.TrinityTwo.suite.loginAndSignup.TrinityTwoSelfVerificationValidation@7dcf94f8]" name="quit" is-config="true" duration-ms="3216" started-at="2021-02-19T09:12:42 IST" finished-at="2021-02-19T09:12:45 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.TrinityTwo.suite.loginAndSignup.TrinityTwoSelfVerificationValidation -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Login Suite]">
+  <test thread-count="5" name="Login Test(failed)">
+    <classes>
+      <class name="com.TrinityTwo.suite.loginAndSignup.TrinityTwoLoginPageTitle">
+        <methods>
+          <include name="init"/>
+          <include name="trinityTwo_Login_Page_Title" invocation-numbers="0"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- com.TrinityTwo.suite.loginAndSignup.TrinityTwoLoginPageTitle -->
+    </classes>
+  </test> <!-- Login Test(failed) -->
+  <test thread-count="5" name="SignUp Test3(failed)">
+    <classes>
+      <class name="com.TrinityTwo.suite.loginAndSignup.TrinityTwoSignupValidatePhoneNumberNegative">
+        <methods>
+          <include name="init"/>
+          <include name="quit"/>
+          <include name="trinityTwo_Signup_ValidatePhoneNumber_Negative" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.TrinityTwo.suite.loginAndSignup.TrinityTwoSignupValidatePhoneNumberNegative -->
+    </classes>
+  </test> <!-- SignUp Test3(failed) -->
+</suite> <!-- Failed suite [Login Suite] -->
