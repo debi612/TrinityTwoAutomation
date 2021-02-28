@@ -34,7 +34,17 @@ public interface TrinityTwoPage extends TrinityTwoNormalPage,TrinityTwoSessionPa
     TrinityTwoPage continueSignup();
 	TrinityTwoPage signupToAccount(String Email, String Phonenumber);
 	TrinityTwoPage signupValidateEmailNegative(String signPhoneNumber);
-	TrinityTwoPage signupValidatePhoneNumberNegative(String signupEmail);
+	TrinityTwoPage signupValidatePhoneNumberNegative(String signupEmail, String invalidPhoneNumber);
+	TrinityTwoPage gotoLoginPage();
+	TrinityTwoPage backSignup();
+	TrinityTwoPage continueEmailPhone(String signupEmail, String signPhoneNumber);
+	TrinityTwoPage signupToAccountValidation();
+	TrinityTwoPage signinValidation(String expectedLoginUN, String expectedLoginPWD);
+	TrinityTwoPage trinityTwoSignin(String loginUN, String loginPWD);
+	TrinityTwoPage trinityTwoSignup(String email, String number, String firstName, String lastName, String dateOfBirth,
+			String password);
+	TrinityTwoPage selfVerification(String postCode, String addressProofFilePath);
+	TrinityTwoPage selfVerificationPersonalAccount(String photoIDFilePath, String expiryDate);
 
     
 }

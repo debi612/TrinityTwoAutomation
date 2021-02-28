@@ -50,6 +50,7 @@ public class HomePage extends TrinityTwoBasePage{
 		log("Going to SignUp page");
 		SignupLink.click();
 		wait(10);
+		
 		return this;
 	}
 	
@@ -57,7 +58,7 @@ public class HomePage extends TrinityTwoBasePage{
 		log("Clicking Continue Button");
 		ContinueButton.click();
 		wait(10);
-		return this;
+		return new SignupPage();
 	}
 	
 	public TrinityTwoPage signupToAccount(String Email, String Phonenumber) {
@@ -75,40 +76,9 @@ public class HomePage extends TrinityTwoBasePage{
 		log("Entered: Country, Email & PhoneNumber");
 		return this;
 	}
-		
-	public TrinityTwoPage signupValidateEmailNegative(String Phonenumber) {
-			log("Validating Signup Email");
-			CountryDropDown.click();
-			wait(5);
-			//waitForPageToLoad();
-			ChooseCountry.click();
-			//SignupEmail.sendKeys(Email);
-			SignupPhoneNumber.sendKeys(Phonenumber);
-			wait(2);
-			SignupEmail.click();
-			wait(10);
-			ContinueButton.click();
-			wait(10);
-			log("Entered: Country & PhoneNumber");
-			return this;
-	}
 	
 	
-	public TrinityTwoPage signupValidatePhoneNumberNegative(String Email) {
-		log("Validating Signup Email");
-		CountryDropDown.click();
-		wait(5);
-		//waitForPageToLoad();
-		ChooseCountry.click();
-		SignupEmail.sendKeys(Email);
-		//SignupPhoneNumber.sendKeys(Phonenumber);
-		wait(2);
-		SignupPhoneNumber.click();
-		wait(10);
-		ContinueButton.click();
-		wait(10);
-		log("Entered: Country & Email");
-		return this;
-}
+	
+	
 	
 }

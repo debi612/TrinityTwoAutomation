@@ -23,11 +23,11 @@ public class LaunchPage extends TrinityTwoBasePage{
     	getDriver().testOpenBrowser(browser);
     	return this;
     }
-	public TrinityTwoPage gotoHomePage(String TCName) {
+	public TrinityTwoPage gotoLoginPage() {
 		log("Navigaing to: http://78.137.117.157/dttmt-demo/login?returnUrl=%2F");
 		getDriver().navigate("http://78.137.117.157/dttmt-demo/login?returnUrl=%2F");
-		log("Started execution for TC: "+TCName);
-		return new HomePage();
+		//log("Started execution for TC: "+TCName);
+		return new LoginPage();
 	}
 
 

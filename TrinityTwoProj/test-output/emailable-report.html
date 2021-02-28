@@ -9,48 +9,10 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">172,929</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">104,390</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.TrinityTwo.suite.loginAndSignup.TrinityTwoSignupTC</td><td><a href="#m0">trinityTwoLoginPageTitle</a></td><td rowspan="1">1610374684722</td><td rowspan="1">18002</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">com.TrinityTwo.suite.loginAndSignup.TrinityTwoSignupTC</td><td><a href="#m1">trinityTwoSignupPageHeader</a></td><td rowspan="1">1610374705691</td><td rowspan="1">23616</td></tr><tr class="passedeven"><td><a href="#m2">trinityTwosignupValidateEmailNegative</a></td><td rowspan="1">1610374729436</td><td rowspan="1">62243</td></tr><tr class="passedeven"><td><a href="#m3">trinityTwosignupValidatePhoneNumberNegative</a></td><td rowspan="1">1610374791997</td><td rowspan="1">65169</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.TrinityTwo.suite.loginAndSignup.TrinityTwoSelfVerificationValidation</td><td><a href="#m0">trinityTwo_SelfVerification_Validation</a></td><td rowspan="1">1613706061449</td><td rowspan="1">100708</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">com.TrinityTwo.suite.loginAndSignup.TrinityTwoSignupTC#trinityTwoLoginPageTitle</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{TCName=TRINITYTWO_LOGIN_PAGE_TITLE, Runmode=Y, Browser=Chrome}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
-	Titles do not match. Got title as DT&amp;T Member Area
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-	at com.TrinityTwo.web.TrinityTwoValidationDriver.assertAll(TrinityTwoValidationDriver.java:96)
-	at com.TrinityTwo.session.TrinityTwoTestSession.end(TrinityTwoTestSession.java:58)
-	at com.TrinityTwo.suite.loginAndSignup.TrinityTwoSignupTC.trinityTwoLoginPageTitle(TrinityTwoSignupTC.java:38)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:764)
-	at org.testng.TestRunner.run(TestRunner.java:585)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-	at org.testng.TestNG.runSuites(TestNG.java:1069)
-	at org.testng.TestNG.run(TestNG.java:1037)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.TrinityTwo.suite.loginAndSignup.TrinityTwoSignupTC#trinityTwoSignupPageHeader</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{TCName=TRINITYTWO_SIGNUP_PAGE_HEADER, SignupHeader=Sign up to your account, Runmode=Y, Browser=Chrome}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.TrinityTwo.suite.loginAndSignup.TrinityTwoSignupTC#trinityTwosignupValidateEmailNegative</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{TCName=SIGNUP_VALIDATE_EMAIL_NEGATIVE, SignupPhoneNumber=4.563432342E9, Runmode=Y, EmailErrorMessage=Email is required., Browser=Chrome}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.TrinityTwo.suite.loginAndSignup.TrinityTwoSignupTC#trinityTwosignupValidatePhoneNumberNegative</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{TCName=SIGNUP_VALIDATE_PHONENUMBER_NEGATIVE, PhoneErrorMessage=Phone number is required., Runmode=Y, SignupEmail=a@b.com, Browser=Chrome}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test</h2><h3 id="m0">com.TrinityTwo.suite.loginAndSignup.TrinityTwoSelfVerificationValidation#trinityTwo_SelfVerification_Validation</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{PhotoIDFilePath=E:\\Selenium Project\\workspace\\TrinityTwoAutomation\\TrinityTwoProj\\Files\\UploadPhotoID.exe, PostCode=L1 8JQ, AddressProofFilePath=E:\\Selenium Project\\workspace\\TrinityTwoAutomation\\TrinityTwoProj\\Files\\FileUpload.exe, Password=Testtest@123, Runmode=Y, ExpiryDate=05/15/2026, UserName=trinity122020@gmail.com, Browser=Chrome}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

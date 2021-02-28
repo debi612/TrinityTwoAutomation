@@ -16,68 +16,31 @@ import com.TrinityTwo.util.DataUtil;
 
 public class TrinityTwoLogin extends TestBase {
 	
-	
 
-	@Test(dataProviderClass = TestDataProvider.class , dataProvider = "getData")
-	public void trinityTwosignupValidatePhoneNumberNegative(Hashtable<String,String> data) {
+	@Test(dataProviderClass = TestDataProvider.class , dataProvider = "getDataSignup")
+	public void trinityTwo_Login(Hashtable<String,String> data) {
 		session.log(data.toString());
 		
-			if(!new DataUtil().isRunnable(testName, xls) || data.get("Runmode").equals("N")) {
+			if(data.get("Runmode").equals("N")) {
 				// skip in extent rep
 				session.skipTest("Skipping the test as Runmode was NO");
 				//skip - testng
 				throw new SkipException("Skipping the test as Runmode was NO");
 			}
 			
-			String tcName = data.get("TCName");
-			String signupEmail = data.get("SignupEmail");
-			String expPhoneErrorMessage = data.get("PhoneErrorMessage");
-			System.out.println("Test data ---" + tcName);
+			String LoginUN = data.get("UserName");
+			String LoginPWD = data.get("Password");
+			System.out.println("Test data ----" + LoginUN + "----" + LoginPWD);
 			
 		    TrinityTwoPage page= new LaunchPage()
 						    .testOpenBrowser("chrome")
-						    .gotoHomePage(tcName)
-						    .gotoSignupPage()
-		    				.continueSignup()
-		    				.signupValidatePhoneNumberNegative(signupEmail)
-		    				.validator(false).validateText(Constants.SIGNUPPHONE_ERROR_LOCATOR, expPhoneErrorMessage);
+						    .gotoLoginPage()
+						    .validator(false).validateTitle(Constants.Login_PAGE_TITLE)
+						    .trinityTwoSignin(LoginUN,LoginPWD);
 		    		
 		    session.end();
 		    
 	}
 	
-	
-	
-	/*
-	
-	@Test(dataProviderClass = TestDataProvider.class , dataProvider = "getData")
-	public void signupToAccount(Hashtable<String,String> data) {
-		session.log(data.toString());
-		
-			if(!new DataUtil().isRunnable(testName, xls) || data.get("Runmode").equals("N")) {
-				// skip in extent rep
-				session.skipTest("Skipping the test as Runmode was NO");
-				//skip - testng
-				throw new SkipException("Skipping the test as Runmode was NO");
-			}
-			
-			String tcName = data.get("TCName");
-			String signupEmail = data.get("SignupEmail");
-			String signPhoneNumber = data.get("SignupPhoneNumber");
-			System.out.println("Test data ---" + tcName);
-			
-		    TrinityTwoPage page= new LaunchPage()
-						    .testOpenBrowser("chrome")
-						    .gotoHomePage(tcName)
-						    .gotoSignupPage()
-		    				.continueSignup()
-		    				.signupToAccount(signupEmail, signPhoneNumber);
-		    		
-		    session.end();
-		    
-	} */
-	
-	
-	
 }
-
+	

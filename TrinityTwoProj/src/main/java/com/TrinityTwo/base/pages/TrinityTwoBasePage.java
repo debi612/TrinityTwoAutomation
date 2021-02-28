@@ -145,6 +145,12 @@ public class TrinityTwoBasePage implements TrinityTwoPage{
 	}
 	
     //----------------------------
+	@Override
+	public TrinityTwoPage gotoLoginPage() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
     public TrinityTwoPage gotoSignupPage() {
 		return null;
 	}
@@ -172,10 +178,71 @@ public class TrinityTwoBasePage implements TrinityTwoPage{
 	}
 
 
+	
+
+
 	@Override
-	public TrinityTwoPage signupValidatePhoneNumberNegative(String signupEmail) {
+	public TrinityTwoPage backSignup() {
 		// TODO Auto-generated method stub
 		return null;
 	}
+
+
+	@Override
+	public TrinityTwoPage signupValidatePhoneNumberNegative(String signupEmail, String invalidPhoneNumber) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+	@Override
+	public TrinityTwoPage continueEmailPhone(String signupEmail, String signPhoneNumber) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+	@Override
+	public TrinityTwoPage signupToAccountValidation() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+	@Override
+	public TrinityTwoPage signinValidation(String expectedLoginUN, String expectedLoginPWD) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+	@Override
+	public TrinityTwoPage trinityTwoSignin(String loginUN, String loginPWD) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+	@Override
+	public TrinityTwoPage trinityTwoSignup(String email, String number, String firstName, String lastName,
+			String dateOfBirth, String password) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+	@Override
+	public TrinityTwoPage selfVerification(String postCode, String addressProofFilePath) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public TrinityTwoPage selfVerificationPersonalAccount(String photoIDFilePath, String expiryDate) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
 	
 }

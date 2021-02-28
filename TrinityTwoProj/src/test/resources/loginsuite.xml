@@ -1,9 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Login Suite" parallel="tests">
-  <test  name="Login Test">
+<suite name="Signup And Login Suite" parallel="none">
+  <test  name="Signup Test1">
     <classes>
-      <class name="com.zoho.suite.testcases.login.LoginTest"/>
+      <class name="com.TrinityTwo.suite.loginAndSignup.TrinityTwoSignupValidation"/>
     </classes>
   </test> <!-- Test -->
+  
+  <test  name="Signup Test2">
+    <classes>
+      <class name="com.TrinityTwo.suite.loginAndSignup.TrinityTwoSignup"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test  name="Signin Test1">
+    <classes>
+      <class name="com.TrinityTwo.suite.loginAndSignup.TrinityTwoSigninValidation"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test  name="Signin Test2">
+    <classes>
+      <class name="com.TrinityTwo.suite.loginAndSignup.TrinityTwoLogin"/>
+    </classes>
+  </test> <!-- Test -->
+  
 </suite> <!-- Suite -->
